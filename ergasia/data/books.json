@@ -1,0 +1,200 @@
+[{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be4f"
+  },
+  "name": "The Great Gatsby",
+  "image": "https://m.media-amazon.com/images/I/81af+MCATTL.jpg",
+  "description": "Όλο build-up και στο τέλος… τίποτα. Απλά απογοήτευση.",
+  "likes": 3,
+  "price": 12.5
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be50"
+  },
+  "name": "1984",
+  "image": "https://m.media-amazon.com/images/I/71kxa1-0mfL.jpg",
+  "description": "Αν και ειναι αρκετα ενδιφέρον δεν είναι ξεκάθαρο για το τι μιλάει ακριβώς ο συγγραφέας και είναι και αρκετά καταθληπτικό.",
+  "likes": 5,
+  "price": 15
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be51"
+  },
+  "name": "The Catcher in the Rye",
+  "image": "https://en.wikipedia.org/wiki/File:Catcher-in-the-rye-red-cover.jpg",
+  "description": "Ο πρωταγωνιστής απλά γκρινιάζει μέχρι να τελειώσει.",
+  "likes": 2,
+  "price": 10.8
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be52"
+  },
+  "name": "Όταν σκοτώνουν τα κοτσίφια",
+  "image": "https://www.public.gr/product/books/greek-books/literature/translated-literature/otan-skotonoun-ta-kotsufia/0120327",
+  "description": "Δεν καταλαβαίνω γιατί ειναι διάσημο. Είχε ωραίο τέλος αλλά για να φτλασω μέχρι την μέση του βιβλίου βαρέθηκα τη ζωή μου!",
+  "likes": 1,
+  "price": 18.2
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be53"
+  },
+  "name": "Ο Αλχιμιστής",
+  "image": "https://external.webstorage.gr/mmimages/image/83/18/45/59/0147310-BOOKS-hero-560x560.jpg",
+  "description": "Αν και ο Πάολο Κοέλιο δεν συνηθίζει να με απογοητεύει, σε αυτό το βιβλίο το έκανε",
+  "likes": 4,
+  "price": 9.99
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be54"
+  },
+  "name": "Twilight",
+  "image": "https://m.media-amazon.com/images/I/81eB+7+CkUL.jpg",
+  "description": "Αμήχανη ιστορία με περίεργο τέλος.",
+  "likes": 2,
+  "price": 11.4
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be55"
+  },
+  "name": "Λογοκρίνωντας μια ιρανική ερωτική ιστορία",
+  "image": "https://cdn.politeianet.gr/data/images/Product/72020/1/el/3330-6022.jpg?d=20250304101452",
+  "description": "Αν και ο συγγραφέας λέει ότι θέλει να κρατήσει μια κριτική στάση για το καθεστώς στην πραγματικότητα απλά προσπαθεί να το κάνει και το κάνει πολύ λιγότερο από ότι θα όφειλε με βαση το πώς παρουσιάζει ο ίδιος το βιβλίο του.",
+  "likes": 6,
+  "price": 13.15
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be56"
+  },
+  "name": "The Da Vinci Code",
+  "image": "https://upload.wikimedia.org/wikipedia/en/e/e9/The_da_vinci_code_final.jpg",
+  "description": "HOT TAKE. Υπερβολική επανάληψη",
+  "likes": 3,
+  "price": 14.6
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be57"
+  },
+  "name": "Harry Potter and the Deathly Hallows",
+  "image": "https://m.media-amazon.com/images/I/81YOuOGFCJL.jpg",
+  "description": "Μεγάλη προσμονή, μέτριο τέλος.",
+  "likes": 7,
+  "price": 22
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be58"
+  },
+  "name": "The Hobbit",
+  "image": "https://m.media-amazon.com/images/I/91b0C2YNSrL.jpg",
+  "description": "Ίσως αν τα expectations ήταν μικρότερα και δεν είχα διαβάσει LOTR να μου άρεσε:/",
+  "likes": 3,
+  "price": 16.5
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be59"
+  },
+  "name": "Divergent",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWevpLLXn1mL-x7IihOffHy4hFene0OWBKIEqWAnnkanCNjkJIebocSHrMCNNQigfdLzkM1AwfNotg9L4RTeWmlBzzrMqg_OcWSrgd8w9oDByw6fRU&s=10&ec=121643184",
+  "description": "Χάνει το νόημα προς το τέλος.",
+  "likes": 2,
+  "price": 11.9
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be5a"
+  },
+  "name": "The Maze Runner 2",
+  "image": "https://www.google.com/imgres?q=the%20maze%20runner%202%20books%20&imgurl=https%3A%2F%2Fc.scdn.gr%2Fimages%2Fsku_main_images%2F024723%2F24723960%2Fxlarge_20250218163608_maze_runner_2_the_scorch_trials.jpeg&imgrefurl=https%3A%2F%2Fwww.skroutz.gr%2Fs%2F24723960%2FMAZE-RUNNER-2-THE-SCORCH-TRIALS.html&docid=Eovp_c_ECxs-qM&tbnid=UzNjpaa0NoChoM&vet=12ahUKEwiEt-Pc646UAxWb8rsIHX3hFrMQnPAOegQIGxAB..i&w=373&h=540&hcb=2&ved=2ahUKEwiEt-Pc646UAxWb8rsIHX3hFrMQnPAOegQIGxAB",
+  "description": "Το 1ο τρομερό, το 3ο καλό γιατί τουλάχιστον δίνει εξηγήσεις. Με το 2ο τι πάθανε? Προβλέψιμο και χωρις να επεξηγεί πουθενά βασικά πράγματα",
+  "likes": 3,
+  "price": 12.8
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be5b"
+  },
+  "name": "Ready Player One",
+  "image": "https://www.google.com/imgres?q=ready%20player%20one%20book&imgurl=https%3A%2F%2Fexternal.webstorage.gr%2Fmmimages%2Fimage%2F31%2F8%2F79%2F83%2F0800309-264x264-800x800.jpg&imgrefurl=https%3A%2F%2Fwww.public.gr%2Fproduct%2Fbooks%2Fenglish%2Fready-player-one%2F0800309&docid=CmfEZK4B9cOUwM&tbnid=eq0nqAUpiGHRTM&vet=12ahUKEwih2rub7I6UAxVKgv0HHeMoHNoQnPAOegQIFxAB..i&w=800&h=800&hcb=2&ved=2ahUKEwih2rub7I6UAxVKgv0HHeMoHNoQnPAOegQIFxAB",
+  "description": "Πολλά references, λίγη ουσία.",
+  "likes": 4,
+  "price": 14.2
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be5c"
+  },
+  "name": "The Girl on the Train",
+  "image": "data:image/webp;base64,UklGRtYDAABXRUJQVlA4IMoDAACQDwCdASolADgAPrUmrVanIScnGADgFolkALszdsTEjXK2FG++c/czUXFx7EkR8wWRTwNUgEyOIjSX/FvOT6HmfL6n9gro7jfeOcdwl76TrDjPkSswxQohLhBxmW3IJ+d+dEEs5Wu6w1PRWfmrTwa5qKhTVE6Ns4zuMdmubNBnafYAdCMAAP74T5l/gSxpYESBk+JEfPZjwmJzOBb1wZfdKkJqSmVj9J8mlt3pfv5vg852csI21uEUIOTV0XVAFcU6WvQu8L18ci7/L/dxq+KWou1Zzq6cpSvRFqv3YTF3i8nsAhw2fuSwnPLfHdJFmN39K0q/fue5lJ8DWSoXutEChIBpYIOGRUBE4p4hMMgThHmMkqJXx31rxueRhZjb4jpVEGmbIMQRRFT4wheRosJKMkUKLWt3gjW8/27HGgv5llNDLYKNVpT7Gtg8WpuXfrEoMSLgFnWR4MzHv5oBOk9Wk+pmFNkd+gsfZjB+l1x2b2ZrzhkVrxwd/mlqTconTgz8adDbI6Gd6QEK1z4MdzXtIldUtAz3dtTO+BcaDGxAbw/Dsd/PPwf3qU/Gi1O3DgdiSF1P5xGQpdQBbOD9jcfDgsUcyGM4s/BS7X3srLuNvE5VeDxV65hVbAwbECBvopGPxL1BlYDISQp+Xtg/mmYRwGdw4MC7aKV0hQpsUdz/8QV5+PrNm/yWAzU/q18SaCnDPSI3HXFOvPcLQF3HOLmzAyxPmWqD/qH2thm3VnaVptpd+WbIV2EfwLvUq4Kr9fiVag0mAnKGWzgliD/Wo7YP2r6STWvjHJr/4vC/wGrM/k1T8LREzTWZ8GBT9s1xYO/7uDfciuG2jbQ4Kl7+lzGDM2gG0Dutpcc3HZaKKUDfolPxxEhR6ftJ/ZJVdyo625pWnnZ2XG3l7qPWIHUfjZE6z/2Ig/MjpnTSfG0uIcWngKwy7hCJEx8Od+HwAw+02wzaUdZoO/dH/0bs7wGkfAq2nktleqBT32ArhYMATtkrsnjYKjTM6XSArNn/f/9o8Z1mrmInPgDi23x2v/poHvf6I/jN/963E1Jng9hK56HP+Nwvqu1Fb18B8cLW/K54TSQZlVuPk2hdgVQOh30RqoKU0/QrAliWG8Sjg5qDjVE2bOrn1/DbxyjU6ORwFUlnEdOVHuUezFX0Djk6NfadOyJhvZshz+YIbGHDH+ErmmNi88L/xpsAfWzU177q+iRpXEFuxbNzuo5hVrxJe4DAq9mLsE027CiN1Ehy9wZmILT3fWh6BHp/+WOpk9Fq32LZCbZmsUEDYDpj7wAA",
+  "description": "Μπερδεμένο και απογοητευτικό τέλος. Θα μπορούσε να τελλειώσει και ευχάριστα δεν χρειαζόταν έτσι",
+  "likes": 2,
+  "price": 13.5
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be5d"
+  },
+  "name": "Gone Girl",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPUbpzC2GF_IAkIAqgxoeIGYAijN44LfykSPp609w6yYM9cipO",
+  "description": "Περίεργο twist αλλά όχι ικανοποιητικό.",
+  "likes": 5,
+  "price": 15.3
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be5e"
+  },
+  "name": "The Fault in Our Stars",
+  "image": "https://m.media-amazon.com/images/I/81a4kCNuH+L.jpg",
+  "description": "Υπερβολικά δραματικό.",
+  "likes": 6,
+  "price": 10.5
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be5f"
+  },
+  "name": "Life of Pi",
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/57/Life_of_Pi_2012_Poster.jpg",
+  "description": "Ωραία ιδέα αλλά μπερδεμένο τέλος.",
+  "likes": 4,
+  "price": 14.8
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be60"
+  },
+  "name": "The Road",
+  "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTef-D98F2pEq_K6TknOb1zsc_hyehIKjtqVXYpUfT_37frAl5PxUhqVRhEXUJ3VAZXHGSv-t_ZlH3vyu_ByyGweDm9NSXl0pJYnEQ4j-jaR1k7PtTC058EQC-FPyEPNh9wh5fuZHc&usqp=CAc",
+  "description": "Σκοτεινό χωρίς λόγο.",
+  "likes": 3,
+  "price": 17
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be61"
+  },
+  "name": "A Game of Thrones",
+  "image": "https://m.media-amazon.com/images/I/91dSMhdIzTL.jpg",
+  "description": "Πολλοί χαρακτήρες, χαοτική πλοκή.",
+  "likes": 1,
+  "price": 25.9
+},
+{
+  "_id": {
+    "$oid": "69efbc5a018c03efc311be62"
+  },
+  "name": "Before the coffee gets cold",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDa_r21DQ34xhZFC1khfx7_Cco9V0RQNycb_9WFTgfzUYEIBQCA00u-k_kGP4N4TjQeZfrz5nsnT5afzcMOsVYeubbwfWxmoqyjcGwV2bSYtjjMyA&s=10&ec=121643184",
+  "description": "Δεν καταλαβαίνω το χαιπ. Προσωπικά θα ήθελα οι ιστορίες να μην εξελίσσονται τόσο γραμμικά αλλά να μπλέκονται περισσότερο η μία με την άλλη.",
+  "likes": 4,
+  "price": 25
+}]

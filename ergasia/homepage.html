@@ -1,156 +1,223 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>GoodReads-BadEnds</title>
-    <link rel="icon" type="image/x-icon" href="../ergasia/img/logo.png">
-    <link rel="stylesheet" href="../ergasia/css/style.css">
-
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="../ergasia/img/logo.png" />
+    <link rel="stylesheet" href="../ergasia/css/style.css" />
+  </head>
+  <body>
     <!-- Κύματα  -->
     <section>
-        <div class='air air1'></div>
-        <div class='air air2'></div>
-        <div class='air air3'></div>
-        <div class='air air4'></div>
+      <div class="air air1"></div>
+      <div class="air air2"></div>
+      <div class="air air3"></div>
+      <div class="air air4"></div>
     </section>
 
     <!-- Navigation με κουμπιά για αρχική σελίδα και άλλη σελίδα  -->
     <nav>
-        <div class="navigation-text">
-            <img src="../ergasia/img/logo.png" alt="logo">
-            <h1>GoodReads-BadEnds</h1>
-        </div>
-        <div class="navigation-links">
-            <a class="active" href="../ergasia/homepage.html">Homepage</a>
-            <a href="../ergasia/items.html">Βιβλία</a>
-        </div>
+      <div class="navigation-text">
+        <img src="../ergasia/img/logo.png" alt="logo" />
+        <h1>GoodReads-BadEnds</h1>
+      </div>
+      <div class="navigation-links">
+        <a class="active" href="../ergasia/homepage.html">Homepage</a>
+        <a href="../ergasia/items.html">Βιβλία</a>
+      </div>
     </nav>
 
     <!-- Logo και όνομα  -->
     <div class="logo-name">
-        <img src="../ergasia/img/logo.png" alt="logo">
-        <h1 class="headergood">GoodReads</h1>
-        <h1 class="headerbad">BadEnds</h1>
+      <img src="../ergasia/img/logo.png" alt="logo" />
+      <h1 class="headergood">GoodReads</h1>
+      <h1 class="headerbad">BadEnds</h1>
     </div>
 
     <main>
-        <div class="textbeforeslideshow">
-            <h1>Frequently Asked Questions</h1>
+      <div class="textbeforeslideshow">
+        <h1>Frequently Asked Questions</h1>
 
-            <h2>Τι είναι το GoodReads-BadEnds?</h2>
-            <p>Το GoodReads-BadEnds είναι ο κατάλληλος ιστότοπος για όσους απογοητεύτηκαν από το τέλος ενός βιβλίου.
-                Εδώ μπορείς να βρεις βιβλία που νευρίασαν,απογοήτευσαν και εξόργισαν άλλους αναγνώστες και να εκφράσεις κι εσύ το μίσος σου προς αυτά!</p>
+        <h2>Τι είναι το GoodReads-BadEnds?</h2>
+        <p>
+          Το GoodReads-BadEnds είναι ο κατάλληλος ιστότοπος για όσους
+          απογοητεύτηκαν από το τέλος ενός βιβλίου. Εδώ μπορείς να βρεις βιβλία
+          που νευρίασαν,απογοήτευσαν και εξόργισαν άλλους αναγνώστες και να
+          εκφράσεις κι εσύ το μίσος σου προς αυτά!
+        </p>
+      </div>
+
+      <!-- Το slideshow με τις εικόνες ανθρώπων -->
+      <div class="slideshow-container" id="slideshow">
+        <!-- Εικόνες του slideshow με captions -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img
+            src="../ergasia/img/slides1.jpg"
+            style="width: 100%"
+            alt="Χαρούμενος άνθρωπος που διαβάζει ένα βιβλίο"
+          />
+          <div class="caption-good">GoodReads</div>
         </div>
 
-        <!-- Το slideshow με τις εικόνες ανθρώπων -->
-        <div class="slideshow-container"  id="slideshow">
-
-            <!-- Εικόνες του slideshow με captions -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 4</div>
-                <img src="../ergasia/img/slides1.jpg" style="width:100%" alt="Χαρούμενος άνθρωπος που διαβάζει ένα βιβλίο">
-                <div class="caption-good">GoodReads</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 4</div>
-                <img src="../ergasia/img/slides2.jpg" style="width:100%" alt="Στεναχωρημένος άνθρωπος που διαβάζει ένα βιβλίο">
-                <div class="caption-bad">BadEnds</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 4</div>
-                <img src="../ergasia/img/slides3.jpg" style="width:100%" alt="Χαρούμενος άνθρωπος που διαβάζει ένα βιβλίο">
-                <div class="caption-good">GoodReads</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 4</div>
-                <img src="../ergasia/img/slides4.png" style="width:100%" alt="Στεναχωρημένος άνθρωπος που διαβάζει ένα βιβλίο">
-                <div class="caption-bad">BadEnds</div>
-            </div>
-
-            <!-- Κουμπιά με βέλη του slideshow -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img
+            src="../ergasia/img/slides2.jpg"
+            style="width: 100%"
+            alt="Στεναχωρημένος άνθρωπος που διαβάζει ένα βιβλίο"
+          />
+          <div class="caption-bad">BadEnds</div>
         </div>
 
-
-        <div class="textafterslideshow">
-            <h2>Ουάου! Απίστευτο! Πως μπορώ να το κάνω αυτό?</h2>
-            <p>Κάνε κλικ <a href="items.html">εδώ</a> για να μεταβείς στην σελίδα με τον κατάλογο των βιβλίων</p>
-            <h1>Tα πιο μισητά βιβλία!</h1>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img
+            src="../ergasia/img/slides3.jpg"
+            style="width: 100%"
+            alt="Χαρούμενος άνθρωπος που διαβάζει ένα βιβλίο"
+          />
+          <div class="caption-good">GoodReads</div>
         </div>
 
-        <!-- Οι εικόνες των πιο μισητών βιβλίων  -->
-        <div class="item-grid" id="grid-homepage">
-            <div class="result">
-                <img src="../ergasia/img/item4.jpg" style="width:100%" alt="Το εξώφυλλο του &quot;The Elegance Of The Hedgehog&quot;">
-                <div class="caption-text">
-                    <div class="book-title">The Elegance Of The Hedgehog</div>
-                </div>
-                <div class="dislike-section">
-                    <button id="book1"> <img src="../ergasia/img/dislike-before.png" alt="κουμπί dislike"> </button>
-                    120
-                </div>
-            </div>
-
-            <div class="result">
-                <img src="../ergasia/img/item5.jpg" style="width:100%" alt="Το εξώφυλλο του &quot;The Lovely Bones&quot;">
-                    <div class="caption-text"><div class="book-title">The Lovely Bones</div>
-                </div>
-                <div class="dislike-section">
-                    <button id="book2"> <img src="../ergasia/img/dislike-before.png" alt="κουμπί dislike"> </button>
-                    83
-                </div>
-            </div>
-
-            <div class="result">
-                <img src="../ergasia/img/item6.jpg" style="width:100%" alt="Το εξώφυλλο του &quot;My Sister's Keeper&quot;">
-                <div class="caption-text">
-                    <div class="book-title">My Sister's Keeper</div>
-                </div>
-                <div class="dislike-section">
-                    <button id="book3"> <img src="../ergasia/img/dislike-before.png" alt="κουμπί dislike"> </button>
-                    15
-                </div>
-            </div>
-
-            <div class="result">
-                <img src="../ergasia/img/item7.jpg" style="width:100%" alt="Το εξώφυλλο του &quot;Eragon&quot;">
-                <div class="caption-text">
-                    <div class="book-title">Eragon</div>
-                </div>
-                <div class="dislike-section">
-                    <button id="book4"> <img src="../ergasia/img/dislike-before.png" alt="κουμπί dislike"> </button>
-                    99
-                </div>
-            </div>
-
-            <div class="result">
-                <img src="../ergasia/img/item8.jpg" style="width:100%" alt="Το εξώφυλλο του &quot;The Andromeda Strain&quot;">
-                <div class="caption-text">
-                    <div class="book-title">The Andromeda Strain</div>
-                </div>
-                <div class="dislike-section">
-                    <button id="book5"> <img src="../ergasia/img/dislike-before.png" alt="κουμπί dislike"> </button>
-                    4
-                </div>
-            </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img
+            src="../ergasia/img/slides4.png"
+            style="width: 100%"
+            alt="Στεναχωρημένος άνθρωπος που διαβάζει ένα βιβλίο"
+          />
+          <div class="caption-bad">BadEnds</div>
         </div>
+
+        <!-- Κουμπιά με βέλη του slideshow -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div class="textafterslideshow">
+        <h2>Ουάου! Απίστευτο! Πως μπορώ να το κάνω αυτό?</h2>
+        <p>
+          Κάνε κλικ <a href="items.html">εδώ</a> για να μεταβείς στην σελίδα με
+          τον κατάλογο των βιβλίων
+        </p>
+        <h1>Tα πιο μισητά βιβλία!</h1>
+      </div>
+
+      <!-- Οι εικόνες των πιο μισητών βιβλίων  -->
+      <div class="item-grid" id="grid-homepage">
+        <div class="result">
+          <img
+            src="../ergasia/img/item4.jpg"
+            style="width: 100%"
+            alt='Το εξώφυλλο του "The Elegance Of The Hedgehog"'
+          />
+          <div class="caption-text">
+            <div class="book-title">The Elegance Of The Hedgehog</div>
+          </div>
+          <div class="caption-text">
+            <div class="price">22$</div>
+          </div>
+          <div class="dislike-section">
+            <button id="book1">
+              <img
+                src="../ergasia/img/dislike-before.png"
+                alt="κουμπί dislike"
+              />
+            </button>
+            120
+          </div>
+        </div>
+
+        <div class="result">
+          <img
+            src="../ergasia/img/item5.jpg"
+            style="width: 100%"
+            alt='Το εξώφυλλο του "The Lovely Bones"'
+          />
+          <div class="caption-text">
+            <div class="book-title">The Lovely Bones</div>
+          </div>
+          <div class="dislike-section">
+            <button id="book2">
+              <img
+                src="../ergasia/img/dislike-before.png"
+                alt="κουμπί dislike"
+              />
+            </button>
+            83
+          </div>
+        </div>
+
+        <div class="result">
+          <img
+            src="../ergasia/img/item6.jpg"
+            style="width: 100%"
+            alt='Το εξώφυλλο του "My Sister&apos;s Keeper"'
+          />
+          <div class="caption-text">
+            <div class="book-title">My Sister's Keeper</div>
+          </div>
+          <div class="dislike-section">
+            <button id="book3">
+              <img
+                src="../ergasia/img/dislike-before.png"
+                alt="κουμπί dislike"
+              />
+            </button>
+            15
+          </div>
+        </div>
+
+        <div class="result">
+          <img
+            src="../ergasia/img/item7.jpg"
+            style="width: 100%"
+            alt='Το εξώφυλλο του "Eragon"'
+          />
+          <div class="caption-text">
+            <div class="book-title">Eragon</div>
+          </div>
+          <div class="dislike-section">
+            <button id="book4">
+              <img
+                src="../ergasia/img/dislike-before.png"
+                alt="κουμπί dislike"
+              />
+            </button>
+            99
+          </div>
+        </div>
+
+        <div class="result">
+          <img
+            src="../ergasia/img/item8.jpg"
+            style="width: 100%"
+            alt='Το εξώφυλλο του "The Andromeda Strain"'
+          />
+          <div class="caption-text">
+            <div class="book-title">The Andromeda Strain</div>
+          </div>
+          <div class="dislike-section">
+            <button id="book5">
+              <img
+                src="../ergasia/img/dislike-before.png"
+                alt="κουμπί dislike"
+              />
+            </button>
+            4
+          </div>
+        </div>
+      </div>
     </main>
     <div class="footer">
-        <div class="footer-header">Μέλη ομάδας</div>
-        <div class="footer-text">
-            Αργυρώ Μπανιώτη, Ελισάβετ Κυριαζοπούλου, Αλεξάνδρα Κολπακίδη, Δήμητρα Λιλή
-        </div>
+      <div class="footer-header">Μέλη ομάδας</div>
+      <div class="footer-text">
+        Αργυρώ Μπανιώτη, Ελισάβετ Κυριαζοπούλου, Αλεξάνδρα Κολπακίδη, Δήμητρα
+        Λιλή
+      </div>
     </div>
 
     <script src="../ergasia/js/homepage.js" defer></script>
-
-
-</body>
+  </body>
 </html>
