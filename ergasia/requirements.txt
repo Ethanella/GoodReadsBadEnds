@@ -2,3 +2,4 @@ flask
 flask-pymongo
 flask-cors
 numpy
+bson.objectid 
