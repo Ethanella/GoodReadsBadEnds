@@ -21,7 +21,7 @@ def serialize_book(book):
         "image": book.get("image"),
         "description": book.get("description"),
         "likes": book.get("likes",0),
-        "price": book.get("price")
+        "price": book.get("price",0)
     }
 
 @app.route('/')
@@ -29,17 +29,16 @@ def home():
   return "API is running"
 
 if __name__ == '__main__':
-   app.run(debug=True)
+   app.run(host="127.0.0.1",port=5000,debug=True)
 
 @app.route('/search', methods=['GET'])
 def search_books():
-
-    name = request.args.get('name', '')
-    books=[]
+    name = request.args.get("name", "")
+    
     if name == "":
         books= db_books.find()
     else:
-        books=db_books.find({"$text": {"$search":name}})
+        books=db_books.find({"$text": {"$search": name}})
     
     final_items=[serialize_book(b) for b in books]
     final_items=sorted(final_items, key=lambda x: x["name"], reverse=True)
@@ -47,20 +46,23 @@ def search_books():
     return jsonify(final_items)
   
 
-@app.route('/like', methods=['POST'])
-def increase_like():
-
-    book_id = request.get_json().get("id")
+@app.route('/like/<string:book_id', methods=['POST'])
+def increase_like(book_id):
     
-    if not book_id:
-        return jsonify({"error": "Missing id"}), 400
-    
-    filter={"_id": ObjectId(book_id)}
-    newvalues={"$inc": {"likes": 1}}
+    try:
+        filter={"_id": ObjectId(book_id)}
+        newvalues={"$inc": {"likes": 1}}
 
-    db_books.update_one(
-        filter,newvalues
-    )
+        result=db_books.update_one(
+            filter,newvalues
+        )
+        if result.matched_count==0:
+            return jsonify({"error": "Missing id"}), 400
+        
+        return jsonify({"message": "Like added"})
+    
+    except Exception:
+        return jsonify({"error": "Invalid ID"}), 400
             
 @app.route('/popular', methods=['GET'])
 def get_popular():
