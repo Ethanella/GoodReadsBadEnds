@@ -55,7 +55,9 @@ try:
     @app.route('/like', methods=['POST'])
     def increase_like():
 
-        book_id = request.args.get("id")
+        #book_id = request.args.get("id")
+        data = request.get_json()
+        book_id = data["id"]
 
         if not book_id:
             return jsonify({"error": "Missing id"}), 400
