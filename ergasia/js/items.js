@@ -107,7 +107,7 @@ function showSlidesAutomatic() {
 //Κώδικας για τα dislike
 let disliked_homepage={};
 
-dislikeStartHomepage();
+//dislikeStartHomepage();
 
 function dislikeStartHomepage(){
     if(document.getElementById("grid-homepage"))
@@ -142,3 +142,62 @@ function dislikeClickedHomepage(){
 
 
 
+async function getPopular() {
+    const url = "http://127.0.0.1:5000/popular";
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        const grid = document.getElementById("grid-homepage");
+
+        for (let i = 0; i < data.length; i++) {
+            let result = document.createElement("div");
+            result.setAttribute("class","result");
+            grid.appendChild(result);
+
+            let resultImage = document.createElement("img")
+            resultImage.setAttribute("src", data[i].image);
+            resultImage.setAttribute("style","width: 100%");
+            resultImage.setAttribute("alt","Το εξώφυλλο του " + "\"" + data[i].name + "\"");
+            result.appendChild(resultImage)
+
+            let captionText = document.createElement("div");
+            captionText.setAttribute("class","caption-text");
+            result.appendChild(captionText);
+            let bookTitle = document.createElement("div");
+            bookTitle.setAttribute("class", "book-title");
+            bookTitle.innerText = data[i].name;
+            captionText.appendChild(bookTitle);
+
+            let priceDislike = document.createElement("div");
+            priceDislike.setAttribute("class","price-dislike");
+            result.appendChild(priceDislike);
+            let price = document.createElement("div");
+            price.setAttribute("class","price");
+            price.innerText = data[i].price + "$";
+            priceDislike.appendChild(price);
+            let dislikeSection = document.createElement("div");
+            dislikeSection.setAttribute("class","dislike-section");
+            let button = document.createElement("button");
+            button.setAttribute("id","book"+(i+1));
+            dislikeSection.appendChild(button);
+            let buttonImage = document.createElement("img");
+            buttonImage.setAttribute("src","../ergasia/img/dislike-before.png");
+            buttonImage.setAttribute("alt","κουμπί dislike");
+            button.appendChild(buttonImage);
+            dislikeSection.innerHTML += data[i].likes;
+            priceDislike.appendChild(dislikeSection);
+
+            dislikeStartHomepage();
+        }
+
+    } catch (error) {
+        console.error(error.message);
+    }
+}
+
+window.addEventListener("load", getPopular());
