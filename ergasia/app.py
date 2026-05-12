@@ -44,7 +44,8 @@ try:
         if name == "":
             books= db_books.find()
         else:
-            books=db_books.find({"$text": {"$search": name}})
+
+            books= db_books.find({"name": {"$regex": name, "$options":"i"}})
 
         final_items=[serialize_book(b) for b in books]
         final_items=sorted(final_items, key=lambda x: x["name"], reverse=True)
@@ -55,7 +56,6 @@ try:
     @app.route('/like', methods=['POST'])
     def increase_like():
 
-        #book_id = request.args.get("id")
         data = request.get_json()
         book_id = data["id"]
 
