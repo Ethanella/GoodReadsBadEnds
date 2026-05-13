@@ -362,18 +362,11 @@ main{
   padding-bottom: 5px;
 }
 
-/*background*/
-main{
-  background-color: #e5e3e3;
-}
-
 body{
-  background: rgb(15, 15, 44);
+  background: #e5e3e3;
   font-family: 'Century Gothic', sans-serif;
   pointer-events: all;
 }
-
-
 
 /*Για το αρχείο items.html*/
 
@@ -395,12 +388,9 @@ body{
 
 .book-title{
   font-size: large;
-  margin-top:10px;
+  font-weight: bolder;
+  margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.comment{
-  font-weight: normal;
 }
 
 .search-bar button {
@@ -506,9 +496,8 @@ body{
   rotate:180deg;
 }
 
-.caption-text{
+.description{
   margin-bottom:40px;
-  font-weight: bold;
   padding-top: 2px;
   padding-bottom: 5px;
 }
