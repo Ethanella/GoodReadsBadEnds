@@ -18,11 +18,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba3b1267-14c7-47b0-afa6-a6b218b59f14" name="Changes" comment="JS ανάπτυξη search στο items, dislike σε homepage και items. Μικρή αλλαγή στον τρόπο που παίρνει input το endpoint /like στο app.py για τις ανάγκες του post method.">
+    <list default="true" id="ba3b1267-14c7-47b0-afa6-a6b218b59f14" name="Changes" comment="Αλλαγή στο dislike. Πρόσθεση μηνύματος σε περίπτωση μη εύρεσης βιβλίου στο search.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ergasia/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/ergasia/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ergasia/items.html" beforeDir="false" afterPath="$PROJECT_DIR$/ergasia/items.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ergasia/js/homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/ergasia/js/homepage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ergasia/js/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/ergasia/js/items.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +178,8 @@
       <workItem from="1778414139920" duration="1576000" />
       <workItem from="1778415761254" duration="10382000" />
       <workItem from="1778672309304" duration="210000" />
-      <workItem from="1778672539285" duration="5459000" />
+      <workItem from="1778672539285" duration="5664000" />
+      <workItem from="1778685567458" duration="2274000" />
     </task>
     <task id="LOCAL-00001" summary="commit1 html,css,js">
       <option name="closed" value="true" />
@@ -367,7 +365,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778425030525</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Αλλαγή στο dislike. Πρόσθεση μηνύματος σε περίπτωση μη εύρεσης βιβλίου στο search.">
+      <option name="closed" value="true" />
+      <created>1778681043312</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1778681043313</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +403,8 @@
     <MESSAGE value="Συγχώνευση js" />
     <MESSAGE value="Εμφάνιση popular στο homepage" />
     <MESSAGE value="JS ανάπτυξη search στο items, dislike σε homepage και items. Μικρή αλλαγή στον τρόπο που παίρνει input το endpoint /like στο app.py για τις ανάγκες του post method." />
-    <option name="LAST_COMMIT_MESSAGE" value="JS ανάπτυξη search στο items, dislike σε homepage και items. Μικρή αλλαγή στον τρόπο που παίρνει input το endpoint /like στο app.py για τις ανάγκες του post method." />
+    <MESSAGE value="Αλλαγή στο dislike. Πρόσθεση μηνύματος σε περίπτωση μη εύρεσης βιβλίου στο search." />
+    <option name="LAST_COMMIT_MESSAGE" value="Αλλαγή στο dislike. Πρόσθεση μηνύματος σε περίπτωση μη εύρεσης βιβλίου στο search." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
