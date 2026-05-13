@@ -1,4 +1,3 @@
-//homepage
 //Κώδικας για τα slideshow
 
 let slideIndex = 0;
@@ -65,11 +64,8 @@ function showSlidesAutomatic() {
 //Κώδικας για τα dislike
 let disliked_homepage={};
 
-//dislikeStartHomepage();
-
 function dislikeStartHomepage(){
     let bookNumber;
-    console.log(document.getElementById("grid-homepage"))
     let amountOfBooks=document.getElementById("grid-homepage").children.length
     for(bookNumber=1;bookNumber<=amountOfBooks;bookNumber++)
     {
@@ -82,17 +78,12 @@ function dislikeStartHomepage(){
 
 function dislikeClickedHomepage(){
     let bookId=this.id;
-    console.log(disliked_homepage[bookId])
     if (disliked_homepage[bookId]===false){
-        this.firstElementChild.src="img/dislike-after.png"
-        this.nextSibling.textContent++;
-        dislike(bookId);
+        this.firstElementChild.src="img/dislike-after.png";
     }
-    else{
-        this.firstElementChild.src="img/dislike-before.png"
-        this.nextSibling.textContent--;
-    }
-    disliked_homepage[bookId]=!disliked_homepage[bookId]
+    this.nextSibling.textContent++;
+    dislike(bookId);
+    disliked_homepage[bookId]=!disliked_homepage[bookId];
 }
 
 
@@ -161,7 +152,6 @@ async function getPopular() {
 window.addEventListener("load", getPopular());
 
 async function dislike(bookId) {
-    //const input = document.getElementById("search-input").value;
     const url = "http://127.0.0.1:5000/like";
     try {
         const response = await fetch(url, {
