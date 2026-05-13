@@ -1,3 +1,6 @@
+/*Αρχικά έχω τα κομμάτια του css που χρησιμοποιούνται στο homepage.html ή και στα δύο html αρχεία
+και στην συνέχεια έχω τα κομμάτια του css που χρησιμοποιούνται στο items.html*/
+
 /*κύματα*/
 section{
   display: grid;
@@ -74,14 +77,6 @@ nav{
   color: ghostwhite;
   height:10%;
 
-  /*border που έβγαλα γιατί είναι άσχημο*/
-  /*
-  background-color: rgb(240,255,240,0.07);
-  border-style: double;
-  border-color: transparent;
-  border-bottom-color: black;
-  */
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -89,7 +84,7 @@ nav{
   box-sizing: border-box;
 }
 
-/*link στο navigation*/
+/*buttons στο navigation*/
 .navigation-buttons{
   float:right;
   display: flex;
@@ -99,6 +94,10 @@ nav{
 }
 
 .navigation-buttons button{
+  /*το αλλάζω;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 5px ;*/
   padding: 20px 20px 20px 20px;
   font-size: large;
   border-style: none;
@@ -107,11 +106,13 @@ nav{
   color:white;
 }
 
+/*Το κουμπί της σελίδας στην οποία βρίσκεται*/
 .navigation-buttons button.active{
   background-color: white;
   color: black;
 }
 
+/*Αλλαγή χρώματος όταν ο κέρσορας κάνει hover πάνω από το κουμπί*/
 .navigation-buttons button:hover{
   background-color: rgb(60,60,60,0.5);
   color:white;
@@ -151,7 +152,6 @@ nav{
   border-width: 2px;
   display: flex;
   align-items: center;
-  margin-bottom: 200vh;
 }
 
 /*εικόνα logo*/
@@ -185,10 +185,11 @@ main{
 }
 
 .textbeforeslideshow{
-  line-break: strict;
   order:1;
-  padding-right: 4%;
-  padding-left: 2%;
+}
+
+.textafterslideshow{
+  order:3;
 }
 
 .textbeforeslideshow, .textafterslideshow{
@@ -196,6 +197,9 @@ main{
   left:5%;
   right:5%;
   width:90%;
+  line-break: strict;
+  padding-right: 4%;
+  padding-left: 2%;
 }
 
 
@@ -205,14 +209,9 @@ main{
   margin-top:3%;
 }
 
-.textbeforeslideshow h2, .textafterslideshow h2{
-  position:relative;
-  left: 1%
-}
-
 .textbeforeslideshow p, .textafterslideshow p{
   position:relative;
-  left: 3%
+  left: 2%
 }
 
 
@@ -252,33 +251,6 @@ main{
 .caption-bad {
   background: rgba(88, 20, 20, 0.6);
 }
-
-
-/*κουκίδες κάτω από slideshow τις οποίες τελικά έβγαλα
-.dots{
-  text-align: center;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: -12%;
-  width: 100%;
-  background: rgb(230, 230, 234,0.5);
-  z-index: -1;
-
-}
-.dot {
-  cursor: pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-  background-color: #717171;
-}
-*/
 
 .fade {
   animation-name: fade;
@@ -334,9 +306,94 @@ main{
 }
 
 
-.textafterslideshow{
-  order:3;
+/*Για τα πιο δημοφιλή βιβλία στο homepage.html και τα αποτελέσματα της αναζήτησης στο items.html*/
+.item-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+
+#grid-homepage{
+  order:3
+}
+
+
+.result {
+  position:relative;
+  max-width: 200px;
+  min-width: 200px;
+  background-color: #e8e7e7;
+  border-color: rgb(47, 79, 79,0.5);
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  padding: 15px;
+  margin: 10px 10px 10px 10px;
+}
+
+.result img{
+  width:150px;
+  height:270px;
+}
+
+
+.caption-text{
+  margin-bottom: 30px;
+}
+
+.book-title{
+  font-size: large;
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.price-dislike{
+  position: absolute;
+  width:85%;
+  bottom: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.price{
+  order:1;
+  position:relative;
+}
+
+.dislike-section{
+  order:2;
+  position:relative;
+
+  font-weight: bold;
+  font-size: large;
+
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+
+}
+
+.dislike-section button{
+  height:18px;
+  width:18px;
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.dislike-section img{
+  height:18px;
+  width:18px;
+  rotate:180deg;
+}
+
 
 
 /*footer*/
@@ -351,7 +408,7 @@ main{
   text-align: center;
   z-index: 100;
 }
-.footer-header{
+.footer-title{
   font-size: large;
   padding-top: 5px;
 }
@@ -368,7 +425,8 @@ body{
   pointer-events: all;
 }
 
-/*Για το αρχείο items.html*/
+/*Από αυτό το σημείο του αρχείου και παρακάτω υπάρχουν τα στοιχεία
+που χρησιμοποιούνται μόνο από το αρχείο items.html*/
 
 /*Για την μπάρα αναζήτησης*/
 .search-bar input[type=text] {
@@ -377,20 +435,11 @@ body{
   margin-top: 8px;
   margin-bottom: 45px;
   font-size: 17px;
-  /*το αλλάζω?
-  border: none;*/
   height: 28px;
 }
 
 .search-bar:enabled{
   border-radius: 8px 20px 0 8px;
-}
-
-.book-title{
-  font-size: large;
-  font-weight: bolder;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .search-bar button {
@@ -421,79 +470,8 @@ body{
   margin-bottom: 10px;
 }
 
-/*Για τα αποτελέσματα της αναζήτησης*/
-.item-grid{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#grid-homepage{
-  order:3
-}
-
 #grid-items{
   order:2
-}
-
-.result {
-  position:relative;
-  max-width: 200px;
-  min-width: 200px;
-  border-color: rgb(47, 79, 79,0.5);
-  border-style: solid;
-  border-radius: 10px;
-  border-width: 1px;
-  padding: 15px;
-  margin: 10px 10px 10px 10px;
-}
-
-.result img{
-  width:150px;
-  height:270px;
-}
-
-.price-dislike{
-  position: absolute;
-  width:85%;
-  bottom: 10px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-}
-
-.price{
-  order:1;
-  position:relative;
-}
-
-.dislike-section{
-  order:2;
-  position:relative;
-
-  font-weight: bold;
-  font-size: large;
-
-  display: flex;
-  flex-direction: row;
-  gap: 6px;
-  align-items: center;
-}
-
-.dislike-section button{
-  height:18px;
-  width:18px;
-  border-color: transparent;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.dislike-section img{
-  height:18px;
-  width:18px;
-  rotate:180deg;
 }
 
 .description{

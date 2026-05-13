@@ -61,7 +61,7 @@ document.getElementById("search-form").addEventListener("submit", async function
             let description = document.createElement("div");
             description.setAttribute("class","description");
             description.innerText = data[i].description;
-            result.appendChild(description);
+            captionText.appendChild(description);
 
             let priceDislike = document.createElement("div");
             priceDislike.setAttribute("class", "price-dislike");
