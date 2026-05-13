@@ -1,20 +1,13 @@
-//items
-
 let disliked_items={};
 
-//dislikeStartItems();
-
 function dislikeStartItems(){
-    if(document.getElementById("grid-items"))
+    let bookNumber;
+    let amountOfBooks=document.getElementById("grid-items").children.length
+    for(bookNumber=1;bookNumber<=amountOfBooks;bookNumber++)
     {
-        let bookNumber;
-        let amountOfBooks=document.getElementById("grid-items").children.length
-        for(bookNumber=1;bookNumber<=amountOfBooks;bookNumber++)
-        {
-            let bookId="book"+bookNumber
-            disliked_items[bookId]=false
-            document.getElementById(bookId).addEventListener("click", dislikeClickedItems);
-        }
+        let bookId="book"+bookNumber
+        disliked_items[bookId]=false
+        document.getElementById(bookId).addEventListener("click", dislikeClickedItems);
     }
 }
 
@@ -23,13 +16,9 @@ function dislikeClickedItems(){
     let bookId=this.id;
     if (disliked_items[bookId]===false){
         this.firstElementChild.src="img/dislike-after.png"
-        this.nextSibling.textContent++;
-        dislike(bookId);
     }
-    else{
-        this.firstElementChild.src="img/dislike-before.png"
-        this.nextSibling.textContent--;
-    }
+    this.nextSibling.textContent++;
+    dislike(bookId);
     disliked_items[bookId]=!disliked_items[bookId]
 }
 
@@ -90,8 +79,17 @@ document.getElementById("search-form").addEventListener("submit", async function
 
             booksDisplayedIds["book"+(i+1)] = data[i].id;
         }
-        dislikeStartItems();
 
+        if (data.length === 0) {
+            let message = document.createElement("div");
+            let messageText = document.createElement("p");
+            messageText.innerHTML = "Το βιβλίο που αναζητάτε δεν υπάρχει!"
+            message.appendChild(messageText);
+            grid.appendChild(message);
+        }
+        else {
+            dislikeStartItems();
+        }
     } catch (error) {
         console.error(error.message);
     }
@@ -99,7 +97,6 @@ document.getElementById("search-form").addEventListener("submit", async function
 
 
 async function dislike(bookId) {
-    //const input = document.getElementById("search-input").value;
     const url = "http://127.0.0.1:5000/like";
     try {
         const response = await fetch(url, {
@@ -117,7 +114,7 @@ async function dislike(bookId) {
         }
 
         const data = await response.json();
-        console.log("post method: " + data);
+        console.log(data);
 
     } catch (error) {
         console.error(error.message);
