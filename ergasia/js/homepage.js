@@ -182,7 +182,7 @@ function refreshPopular()
         {
             let dislikeSectionAfter=results[j].getElementsByClassName("dislike-section");
             let dislikeCountAfter=dislikeSectionAfter[0].textContent;
-            if (dislikeCount<dislikeCountAfter)
+            if (parseInt(dislikeCount)<parseInt(dislikeCountAfter))
             {
                 let child1=grid.children[i];
                 let child2=grid.children[j];
