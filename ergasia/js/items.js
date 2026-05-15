@@ -16,10 +16,10 @@ function dislikeClickedItems(){
     let bookId=this.id;
     if (disliked_items[bookId]===false){
         this.firstElementChild.src="img/dislike-after.png"
+        disliked_items[bookId]=true
     }
     this.nextSibling.textContent++;
     dislike(bookId);
-    disliked_items[bookId]=!disliked_items[bookId]
 }
 
 let booksDisplayedIds = {};
