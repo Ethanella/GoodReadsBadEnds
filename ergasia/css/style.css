@@ -9,7 +9,6 @@ section{
   height: 35vh;
   background: rgb(15, 15, 44);
   overflow: hidden;
-  z-index: 1;
 }
 section .air {
   position: absolute;
@@ -22,28 +21,24 @@ section .air {
 }
 section .air.air1{
   animation: wave 35s linear infinite;
-  z-index: 5;
   opacity: 1;
   animation-delay: 0s;
   bottom: 0;
 }
 section .air.air2{
   animation: wave2 41s linear infinite;
-  z-index: 4;
   opacity: 0.5;
   animation-delay: -5s;
   bottom: 10px;
 }
 section .air.air3{
   animation: wave 36s linear infinite;
-  z-index: 3;
   opacity: 0.2;
   animation-delay: -2s;
   bottom: 15px;
 }
 section .air.air4{
   animation: wave2 22s linear infinite;
-  z-index: 2;
   opacity: 0.7;
   animation-delay: -5s;
   bottom: 20px;
@@ -72,7 +67,6 @@ section .air.air4{
 nav{
   position: absolute;
   top: 0;
-  z-index: 10;
   width: 100%;
   color: ghostwhite;
   height:10%;
@@ -86,7 +80,6 @@ nav{
 
 /*buttons στο navigation*/
 .navigation-buttons{
-  float:right;
   display: flex;
   gap:0;
   text-align: center;
@@ -94,10 +87,6 @@ nav{
 }
 
 .navigation-buttons button{
-  /*το αλλάζω;
-  border-style: solid;
-  border-color: transparent;
-  border-radius: 5px ;*/
   padding: 20px 20px 20px 20px;
   font-size: large;
   border-style: none;
@@ -122,8 +111,6 @@ nav{
 /*text και εικόνα στο navigation*/
 .navigation-text{
   flex:1;
-  top: 20%;
-  left:5%;
   display: flex;
   align-items: center;
   font-size: larger;
@@ -131,7 +118,6 @@ nav{
 
 /*εικόνα logo του navigation*/
 .navigation-text img {
-  float: left;
   height: 40px;
   margin-right: 10px;
   border-radius: 5px;
@@ -145,7 +131,6 @@ nav{
   transform: translateX(-50%);
   width: auto;
   background-color: rgb(40,40,40,1);
-  z-index: 6;
   border-style: solid;
   border-color:#0a012c;
   border-radius: 20px;
@@ -156,11 +141,9 @@ nav{
 
 /*εικόνα logo*/
 .logo-name img {
-  float: left;
   height: 72px;
   background-color: transparent;
   border-radius: 20px;
-  z-index: 1;
 }
 
 /*κείμενο του logo*/
@@ -221,7 +204,6 @@ main{
   position:relative;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 6;
   margin-bottom: 4%;
   margin-top: 4%;
 }
@@ -363,12 +345,10 @@ main{
 
 .price{
   order:1;
-  position:relative;
 }
 
 .dislike-section{
   order:2;
-  position:relative;
 
   font-weight: bold;
   font-size: large;
@@ -422,7 +402,6 @@ main{
 body{
   background: #e5e3e3;
   font-family: 'Century Gothic', sans-serif;
-  pointer-events: all;
 }
 
 /*Από αυτό το σημείο του αρχείου και παρακάτω υπάρχουν τα στοιχεία
@@ -436,10 +415,6 @@ body{
   margin-bottom: 45px;
   font-size: 17px;
   height: 28px;
-}
-
-.search-bar:enabled{
-  border-radius: 8px 20px 0 8px;
 }
 
 .search-bar button {
@@ -464,10 +439,6 @@ body{
   position: relative;
   width: 22px;
   height: 22px;
-}
-
-.search-bar{
-  margin-bottom: 10px;
 }
 
 #grid-items{
