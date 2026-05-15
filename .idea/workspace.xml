@@ -18,10 +18,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba3b1267-14c7-47b0-afa6-a6b218b59f14" name="Changes" comment="Εμφάνιση όλων των βιβλίων εξαρχής στο items.html">
+    <list default="true" id="ba3b1267-14c7-47b0-afa6-a6b218b59f14" name="Changes" comment="Αλλαγές στο dislike στο homepage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ergasia/js/homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/ergasia/js/homepage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ergasia/js/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/ergasia/js/items.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +182,8 @@
       <workItem from="1778685567458" duration="2344000" />
       <workItem from="1778778728899" duration="4468000" />
       <workItem from="1778821437492" duration="120000" />
-      <workItem from="1778821652115" duration="3949000" />
+      <workItem from="1778821652115" duration="4319000" />
+      <workItem from="1778856060518" duration="1417000" />
     </task>
     <task id="LOCAL-00001" summary="commit1 html,css,js">
       <option name="closed" value="true" />
@@ -393,7 +393,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778779373977</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Αλλαγές στο dislike στο homepage">
+      <option name="closed" value="true" />
+      <created>1778825644390</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1778825644390</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,7 +434,8 @@
     <MESSAGE value="Αλλαγή στο dislike. Πρόσθεση μηνύματος σε περίπτωση μη εύρεσης βιβλίου στο search." />
     <MESSAGE value="Πρόσθεση περιγραφής στα βιβλία στο items.html" />
     <MESSAGE value="Εμφάνιση όλων των βιβλίων εξαρχής στο items.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Εμφάνιση όλων των βιβλίων εξαρχής στο items.html" />
+    <MESSAGE value="Αλλαγές στο dislike στο homepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Αλλαγές στο dislike στο homepage" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
