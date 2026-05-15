@@ -179,7 +179,7 @@ main{
   height: auto;
   margin: 0 auto -50px;
   min-height: 100%;
-  padding: 0 0 50px;
+  padding-bottom:80px;
   box-sizing: border-box;
   overflow: auto;
 }

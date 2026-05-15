@@ -61,8 +61,6 @@ function showSlidesAutomatic() {
     setTimeout(showSlidesAutomatic, 2500);
 }
 
-//Κώδικας για τα dislike
-let disliked_homepage={};
 
 function dislikeStartHomepage(){
     let bookNumber;
@@ -70,7 +68,6 @@ function dislikeStartHomepage(){
     for(bookNumber=1;bookNumber<=amountOfBooks;bookNumber++)
     {
         let bookId="book"+bookNumber
-        disliked_homepage[bookId]=false
         document.getElementById(bookId).addEventListener("click", dislikeClickedHomepage);
     }
 }
@@ -78,12 +75,9 @@ function dislikeStartHomepage(){
 
 function dislikeClickedHomepage(){
     let bookId=this.id;
-    if (disliked_homepage[bookId]===false){
-        this.firstElementChild.src="img/dislike-after.png";
-    }
+    this.firstElementChild.src="img/dislike-after.png";
     this.nextSibling.textContent++;
     dislike(bookId);
-    disliked_homepage[bookId]=!disliked_homepage[bookId];
 }
 
 
@@ -173,5 +167,27 @@ async function dislike(bookId) {
 
     } catch (error) {
         console.error(error.message);
+    }
+    refreshPopular()
+}
+
+function refreshPopular()
+{
+    const grid = document.getElementById("grid-homepage");
+    let results = grid.children;
+    for (let i = 0; i < results.length; i++) {
+        let dislikeSection=results[i].getElementsByClassName("dislike-section");
+        let dislikeCount=dislikeSection[0].textContent;
+        for (let j=i+1;j<results.length;j++)
+        {
+            let dislikeSectionAfter=results[j].getElementsByClassName("dislike-section");
+            let dislikeCountAfter=dislikeSectionAfter[0].textContent;
+            if (dislikeCount<dislikeCountAfter)
+            {
+                let child1=grid.children[i];
+                let child2=grid.children[j];
+                grid.insertBefore(child2,child1);
+            }
+        }
     }
 }

@@ -48,7 +48,7 @@ try:
             books= db_books.find({"name": {"$regex": name, "$options":"i"}})
 
         final_items=[serialize_book(b) for b in books]
-        final_items=sorted(final_items, key=lambda x: x["name"], reverse=True)
+        final_items=sorted(final_items, key=lambda x: x["name"], reverse=False)
 
         return jsonify(final_items)
 
