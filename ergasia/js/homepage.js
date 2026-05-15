@@ -80,10 +80,54 @@ function dislikeClickedHomepage(){
     let bookId=this.id;
     if (disliked_homepage[bookId]===false){
         this.firstElementChild.src="img/dislike-after.png";
+        disliked_homepage[bookId]=true;
     }
     this.nextSibling.textContent++;
     dislike(bookId);
-    disliked_homepage[bookId]=!disliked_homepage[bookId];
+    let id = parseInt(bookId.charAt(4));
+    let maxPos = id;
+    let i;
+    for (i=id-1;i>0;i--) {
+        let b = document.getElementById("book"+(i))
+        if (parseInt(b.nextSibling.textContent) < parseInt(this.nextSibling.textContent)) {
+            maxPos = i;
+        }
+    }
+
+    if (maxPos !== id) {
+        let otherBookPlace = document.getElementById("result" + maxPos);
+        let thisBookPlace = document.getElementById("result" + id);
+        let otherBook = otherBookPlace.innerHTML;
+        let thisBook = thisBookPlace.innerHTML;
+
+        otherBookPlace.innerHTML = "";
+        otherBookPlace.innerHTML = thisBook;
+        thisBookPlace.innerHTML = "";
+        thisBookPlace.innerHTML = otherBook;
+
+        otherButton = document.getElementById("book"+maxPos);
+        thisButton = document.getElementById(bookId);
+        otherButton.setAttribute("id","temp");
+        thisButton.setAttribute("id","book"+maxPos);
+        otherButton.setAttribute("id",bookId);
+
+        temp = disliked_homepage["book"+maxPos];
+        disliked_homepage["book"+maxPos]=disliked_homepage[bookId];
+        disliked_homepage[bookId]=temp;
+
+        otherButton.addEventListener("click", dislikeClickedHomepage);
+        thisButton.addEventListener("click", dislikeClickedHomepage);
+    }
+
+    results = document.getElementById("grid-homepage").getElementsByClassName("result");
+    for (i=0;i<results.length;i++) {
+        results[i].setAttribute("id","temp");
+    }
+    for (i=0;i<results.length;i++) {
+        results[i].setAttribute("id","result"+(i+1));
+    }
+
+
 }
 
 
@@ -105,6 +149,7 @@ async function getPopular() {
         for (let i = 0; i < data.length; i++) {
             let result = document.createElement("div");
             result.setAttribute("class","result");
+            result.setAttribute("id","result"+(i+1));
             grid.appendChild(result);
 
             let resultImage = document.createElement("img")
